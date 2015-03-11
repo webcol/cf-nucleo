@@ -1,0 +1,16 @@
+{
+  "name":"webcol/cf-nucleo",
+  "type": "library",
+  "description": "Nucleo de Calima Framework",
+  "license": "GPL-2.0",
+  "keywords": ["framework"],
+  "authors": [
+    {
+      "name": "Ramón Serrano",
+      "email": "ramon.calle.88@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  }
+}
