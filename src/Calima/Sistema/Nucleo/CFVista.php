@@ -29,7 +29,7 @@ class CFVista
 {
     private $_controlador;
     
-    public function __construct(Cf_Solicitud $peticion) {
+    public function __construct(CFSolicitud $peticion) {
         $this->_controlador = $peticion->getControlador();
     }
     

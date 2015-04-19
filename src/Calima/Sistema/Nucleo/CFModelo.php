@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
@@ -30,6 +30,6 @@ class CFModelo
     protected $_bd;
     
     public function __construct() {
-        $this->_bd=new Cf_Basedatos();
+        $this->_bd = new CFBasedatos();
     }
 }

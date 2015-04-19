@@ -30,7 +30,7 @@ abstract class CFControlador
     protected $_vista;
     
     public function __construct() {
-        $this->_vista = new Cf_Vista(new Cf_Solicitud);
+        $this->_vista = new CFVista(new CFSolicitud);
     }
     
     protected function cargaLib($libreria){
