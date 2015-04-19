@@ -28,7 +28,7 @@ namespace Calima\Sistema\Nucleo;
 class CFBootstrap
 {
 
-    public static function actuar(Cf_Solicitud $peticion)
+    public static function actuar(CFSolicitud $peticion)
     {
         $controlador = $peticion->getControlador() . 'Controlador';
         //definimos la ruta al controlador
