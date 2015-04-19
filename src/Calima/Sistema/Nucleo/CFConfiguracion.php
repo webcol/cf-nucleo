@@ -31,7 +31,7 @@ namespace Calima\Sistema\Nucleo;
 class CFConfiguracion
 {
     
-    static function init()
+    static function init($rootUri)
     {
         /* inicio la configuracion*/
         define('Cf_CONFIG_INICIO', 'false');
@@ -74,7 +74,10 @@ class CFConfiguracion
         #Configuracion Basica
 
         /* La siguiente CONSTANTE permite el apuntapiento para archivos js, css, imagenes desde la vista hacia el directorio _public */
-        define('Cf_BASE_URL', 'http://localhost/Calima-master/');
+        if ($rootUri != '')
+            define('Cf_BASE_URL', $rootUri);
+        else 
+            throw new \Exception('Houston no fue configurada Cf_BASE_URL');
 
         /* definimos un controlador inicial en nuestro proyecto */
         define('CONTROLADOR_INICIAL', 'instalador');
