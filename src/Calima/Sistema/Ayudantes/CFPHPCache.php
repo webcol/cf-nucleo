@@ -25,7 +25,7 @@
 
 namespace Calima\Sistema\Ayudantes;
 
-class Cf_PHPCache {
+class CFPHPCache {
 	/**
 	 * Configuracion
 	 *

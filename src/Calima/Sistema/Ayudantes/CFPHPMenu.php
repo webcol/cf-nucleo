@@ -25,8 +25,8 @@
 
 namespace Calima\Sistema\Ayudantes;
 
-
-class Cf_PHPMenu {
+class CFPHPMenu
+{
     
     
     function menu_ul($sel = 'inicio')
